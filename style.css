@@ -75,6 +75,7 @@ body {
 
 .form-description-section {
     padding-top: 15%;
+    padding-bottom: 2rem;
     background-color: #f9fafb;
 }
 
@@ -131,7 +132,7 @@ body {
 }
 
 .form-submit-section {
-    padding-top: 1.5rem;
+    padding-top: 2rem;
     background-color: #f9fafb;
     flex: 1;
 }
