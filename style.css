@@ -78,6 +78,10 @@ body {
     background-color: #f9fafb;
 }
 
+.form-description-section h2 {
+    max-width: 60rem;
+}
+
 .form-content-section {
     position: relative;
     background-color: #ffffff;
