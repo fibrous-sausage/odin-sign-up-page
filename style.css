@@ -123,6 +123,7 @@ body {
 
 .form-field input:focus {
     border-color: #5577d6;
+    box-shadow: 2px 5px 10px 0px #C9C9C9;
 }
 
 .form-field label {
