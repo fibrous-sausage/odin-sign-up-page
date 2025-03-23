@@ -1,12 +1,11 @@
-* {
-    margin: 0;
-}
+
 
 html {
     height: 100%;
 }
 
 body {
+    margin: 0;
     min-height: 100%;
     display: flex;
     flex-direction: row;
@@ -18,12 +17,13 @@ body {
 }
 
 .sidebar {
-    flex: 4;
+    display: flex;
+    flex: 1;
     position: relative;
 }
 
 .sidebar img {
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -32,20 +32,19 @@ body {
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px 0;
     position: absolute;
     top: 25%;
     width: 100%;
 }
 
 .banner img {
-    height: 150px;
+    height: 120px;
     width: auto;
 }
 
 .banner h1 {
     font-family: 'Norse Bold';
-    font-size: 96px;
+    font-size: 6rem;
     color: white;
 }
 
@@ -63,5 +62,96 @@ body {
 }
 
 .content {
-    flex: 6;
+    font-family: sans-serif;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
 }
+
+.content > div {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.form-description-section {
+    padding-top: 15%;
+    background-color: #f9fafb;
+}
+
+.form-content-section {
+    position: relative;
+    background-color: #ffffff;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    box-shadow: 0px 4px 10px 0px #D3D3D3;
+}
+
+.form-content-section form {
+    display: flex;
+    gap: 3rem;
+}
+
+.form-left, .form-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field input {
+    all: unset;
+    padding: 0.2rem;
+    width: 14rem;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 0.2rem;
+    border-color: #E5E7EB;
+}
+
+.form-field input:user-invalid {
+    border-color: #c64646;
+}
+
+.form-field input:focus {
+    border-color: #5577d6;
+}
+
+.form-field label {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+
+.form-submit-section {
+    padding-top: 1.5rem;
+    background-color: #f9fafb;
+    flex: 1;
+}
+
+.form-submit-section button[type="submit"] {
+    all: unset;
+    color: white;
+    font-weight: bold;
+    padding: 0.9rem 3rem;
+    border-radius: 0.4rem;
+    background-color: #596d48;
+    box-shadow: 2px 5px 10px 0px #C9C9C9;
+    margin-bottom: 1.2rem;
+}
+
+.form-submit-section button[type="submit"]:active {
+    background-color: #6e9949;
+}
+
+.form-submit-section a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #596d48;
+}
+
+
+
